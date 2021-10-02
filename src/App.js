@@ -10,6 +10,8 @@ import FriendList from './components/friends/FriendsList';
 import friends from './components/friends/friends.json';
 // ============================================
 
+// ============================================
+
 function App() {
   return (
     <div>
