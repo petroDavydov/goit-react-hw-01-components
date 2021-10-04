@@ -1,18 +1,16 @@
 import s from './Friends.module.css';
 import PropTypes from 'prop-types';
-import { FriendStatus } from './FriendStatus';
+import { friendStatus } from '../../helper/friendStatus';
 
 export default function Friend({ avatar, name, isOnline, id }) {
   return (
-    <ul key={id} className={s.wrapperFriend}>
-      <li className={s.item}>
-        <span className={s.status} style={{ color: FriendStatus(isOnline) }}>
-          •
-        </span>
-        <img className={s.avatar} src={avatar} alt={name} width="48" />
-        <p className={s.name}>{name}</p>
-      </li>
-    </ul>
+    <li key={id} className={s.item}>
+      <span className={s.status} style={{ color: friendStatus(isOnline) }}>
+        •
+      </span>
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
+    </li>
   );
 }
 

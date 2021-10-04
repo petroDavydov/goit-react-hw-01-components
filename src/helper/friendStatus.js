@@ -1,4 +1,4 @@
-export function FriendStatus(status) {
+export function friendStatus(status) {
   if (status) {
     return '#008000';
   } else {

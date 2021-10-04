@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
-import { createColor } from './Color';
+import { createColor } from '../../helper/color';
 
 export default function Statistics({ title, stats }) {
   return (

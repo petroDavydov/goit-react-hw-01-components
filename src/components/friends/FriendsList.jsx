@@ -4,15 +4,11 @@ import Friend from './Friend';
 
 export default function FriendsList({ friends }) {
   return (
-    <div className={s.wrapperFriends}>
-      <ul className={s.friendList}>
-        {friends.map(({ avatar, name, isOnline, id }) => (
-          <li key={id}>
-            <Friend avatar={avatar} name={name} isOnline={isOnline} id={id} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={s.friendList}>
+      {friends.map(({ avatar, name, isOnline, id }) => (
+        <Friend avatar={avatar} name={name} isOnline={isOnline} id={id} />
+      ))}
+    </ul>
   );
 }
 

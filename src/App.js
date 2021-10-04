@@ -1,16 +1,16 @@
 import Container from './components/container/Container';
 // ============================================
 import Profile from './components/profile/Profile';
-import user from './components/profile/user.json';
+import user from './json/user.json';
 // ============================================
 import Statistics from './components/statistics/Statistics';
-import statisticalData from './components/statistics/statistical-data.json';
+import statisticalData from './json/statistical-data.json';
 // ============================================
 import FriendList from './components/friends/FriendsList';
-import friends from './components/friends/friends.json';
+import friends from './json/friends.json';
 // ============================================
 import TransactionHistory from './components/transaction/TransactionHistory';
-import transactions from './components/transaction/transactions.json';
+import transactions from './json/transactions.json';
 // ============================================
 
 function App() {
